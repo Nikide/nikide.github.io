@@ -3,69 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CLICK</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <style>
-    body{
-        background: white;
-        margin: 0;
-    }
-    #counter{
-        position: absolute;
-        background: black;
-        width: 20vw;
-        height: 10vh;
-        top: 1;
-        bottom: 0;
-        left: 1;
-        right: 0;
-        margin: auto;
-        color: white;
-        text-align: center;
-        font-size: 5vh;
-    }
-    #player{
-        background-image: url('./PAliceDefault.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        height: 100vh;
-        width: 50vw;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    #player:hover{
-        cursor: pointer;
-    }
-    #player:active{
-        background-image: url('./PAliceDoubt.png');
-        bottom: +1%;
-    }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-<div id="player">
-</div>
-<div id="counter">
-    <div id="numbers">0</div>
-</div>
+    <section class="hero is-black is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                test
+            </div>
+        </div>
+    </section>
 </body>
-<script>
-    var clicks = 0;
-    $('#player').on('click',function(){
-        clicks++;
-        clicks == 10 && $('body').css('background-color','red');
-        clicks == 20 && $('body').css('background-color','blue');
-        clicks == 30 && $('body').css('background-color','green');
-        clicks == 50 && $('body').css('background-color','black');
-        clicks == 100 && (document.location.href = 'https://www.youtube.com/watch?v=ZZ5LpwO-An4');
-        $('#numbers').html(clicks);
-    })
-    </script>
 </html>
